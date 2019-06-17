@@ -30,7 +30,7 @@ export const PAGINATION_STYLE = `
     display: inline-table;
 }
 .pagination-page .input-group-addon {
-    display: inline;
+    display: table-cell;
 }
 .pagination-box button {
     outline: none !important;

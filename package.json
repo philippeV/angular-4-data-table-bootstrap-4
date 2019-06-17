@@ -1,0 +1,59 @@
+{
+  "name": "angular-datatable-revised",
+  "version": "0.1.2",
+  "description": "An Angular 4 data table, with pagination, sorting, expandable rows etc. Bootstrap 4 version.",
+  "keywords": [
+    "angular",
+    "angular4",
+    "Angular 4",
+    "ng2",
+    "datatable",
+    "data-table",
+    "data table",
+    "Bootstrap",
+    "Bootstrap 4",
+    "pagination"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/bundles/datatable.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/datatable.min.js",
+    "build": "npm run transpile && npm run package && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/afermon/angular-4-data-table-bootstrap-4.git"
+  },
+  "peerDependencies": {
+    "@angular/core": "^4.0.1"
+  },
+  "author": "afermon <alex@xicre.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/compiler": "^4.4.4",
+    "@angular/compiler-cli": "^4.4.4",
+    "rollup": "^0.50.0",
+    "typescript": "^2.5.3",
+    "uglify-js": "^3.1.3"
+  },
+  "dependencies": {
+    "@angular/common": "^4.0.1",
+    "@angular/core": "^4.0.1",
+    "@angular/forms": "^4.0.1",
+    "@angular/platform-browser": "^4.2.5",
+    "@angular/platform-browser-dynamic": "^4.0.1",
+    "@angular/platform-server": "^4.4.4",
+    "@types/node": "~8.0.33",
+    "gulp-ngc": "^0.3.3",
+    "rxjs": "^5.1.0",
+    "ts-node": "~3.3.0",
+    "zone.js": "^0.8.12"
+  },
+  "false": {},
+  "bugs": {
+    "url": "https://github.com/afermon/angular-4-data-table-bootstrap-4/issues"
+  },
+  "homepage": "https://github.com/afermon/angular-4-data-table-bootstrap-4/"
+}
